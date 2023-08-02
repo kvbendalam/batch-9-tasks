@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Pseudo classes</title>
+
+        <style>
+            a:visited{
+                color:red;
+            }
+
+            button:hover{
+                font-size:84px;
+                color:blue;
+                background-color:aqua;
+            }
+
+            a:hover{
+                font-size:84px;
+                color:blue;
+                background-color:aqua;
+            }
+
+            p:first-child{
+                font-size:48px;
+                color:blue;
+            }
+
+            p:last-child{
+                font-size:48px;
+                color:red;
+            }
+
+            p::before{
+                content:"Hello world!"
+            }
+
+            p::after{
+                content:"Thank you"
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="https://www.amazon.in">amazon</a>
+        <a href="https://www.google.com">google</a>
+        <a href="https://www.abc.com">abc</a>
+
+        <button>Hover me!</button>
+
+        <div>
+            <p>This is our paragraph</p>
+            <p>2nd paragraph</p>
+            <p>3rd paragraph</p>
+        </div>
+
+
+        <p>This paragraph</p>
+    </body>
+
+</html>
