@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // var marks = [98,99,87,89,99,100]
+
+        var marks = {
+            telugu: 98,
+            hindi : 99,
+            english : 87,
+            maths : 89,
+            science : 99,
+            social : 100
+        }
+
+        console.log(marks.telugu);
+        console.log(marks.maths);
+        console.log(marks.english);
+
+    
+        var person = {
+            firstname :"Krishna",
+            lastname : "Vamsi",
+            age : 27,
+            mobile : "919220929292",
+            email : "abc@example.com",
+            profession : "Software engineer",
+            place : "Hyderabad",
+            fullname : function (){
+                console.log(this.firstname + " " + this.lastname);
+            },
+            professionAndPlace : function(){
+                console.log(this.profession + "," + this.place)
+            }
+
+        }
+
+
+        console.log(person.firstname);
+        console.log(person.lastname);
+        console.log(person.age);
+        console.log(person.mobile);
+        console.log(person.email);
+        console.log(person.fullname())
+        console.log(person.professionAndPlace())
+    </script>
+</body>
+</html>
