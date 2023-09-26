@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Username:</label>
+    <input type="text" id="username" value="" onblur="convertToupperCase()"/>
+
+    <select onchange="getSelectedCarValue()" id="cars">
+        <option>BMW</option>
+        <option>BENZ</option>
+        <option>Volkswagen</option>
+    </select>
+
+    <input type="text" onfocus="getFocus()" id="focus">
+
+    <input type="text" value="some text" onselect="selectionofText()" id="selection">
+
+    <!-- <form onsubmit="submitEvent()">
+        <label>Username:</label>
+        <input type="text" id="username"/>
+        <input type="submit" value="Submit"/>
+    </form> -->
+
+    <script>
+
+        function convertToupperCase(){
+            var username = document.getElementById("username")
+            username.value = username.value.toUpperCase();
+        }
+
+        function getSelectedCarValue(){
+            var cars = document.getElementById("cars");
+            console.log(cars.value);
+        }
+
+        function getFocus(){
+            var focus = document.getElementById("focus");
+            focus.style.backgroundColor = "green"
+        }
+
+        function selectionofText(){
+            var sel = document.getElementById("selection");
+            alert(sel.value);
+        }
+
+        // function submitEvent(){
+        //     var username = document.getElementById("username")
+        //     console.log(username.value);
+        // }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadEvent()" onresize="resizeEvent()">
+
+    <img src="../images/enri.jpeg" id = "img" onerror="imgLoadinError()"/>
+
+    <script>
+        function loadEvent(){
+            console.log("Page is loaded")
+        }
+
+        function imgLoadinError(){
+            console.log("Image error while loading")
+        }
+
+        function resizeEvent(){
+            console.log("Window is resized")
+        }
+
+    </script>
+</body>
+</html>

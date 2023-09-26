@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function greet() {
+    let a = 'hello';
+
+    // variable b cannot be used here
+    if(a == 'hello'){
+        // variable b can be used here
+        let b = 'world';
+        const c = "Hi"
+        console.log(a + ' ' + b);
+        b = "Hi"
+        console.log(b);
+        c = "Hello"
+        console.log(c)
+    }
+
+     // variable b cannot be used here
+    console.log(a + ' ' + b); // error
+}
+// variable a cannot be used here
+
+greet();
+    </script>
+</body>
+</html>

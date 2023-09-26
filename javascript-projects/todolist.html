@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            text-align:center;
+        }
+
+        #searchValue{
+            width:80%;
+            height:40px;
+            border:1px solid black;
+            font-size: 24px;
+            padding:10px;
+        }
+
+        #searchBtn{
+            width:20%;
+            height:50px;
+            border:1px solid black;
+            font-size: 24px;
+            padding:10px;
+        }
+
+        ul > li{
+            list-style-type: none;
+            font-size: 24px;
+            margin:10px;
+            background-color: gray;
+            color:black;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" id="searchValue" value=""/>
+        <br/><br/>
+        <input type="button" value="Add Todo List" id="searchBtn" onclick="addTodoList()"/>
+        <ul id="todo"></ul>
+    </div>
+  
+    
+
+    <script>
+        function addTodoList(){
+            var searchValue = document.getElementById("searchValue");
+            var li = document.createElement("li")
+            li.innerHTML = searchValue.value;
+            var ul = document.getElementById("todo")
+            ul.appendChild(li)
+            searchValue.value = ""
+        }
+    </script>
+</body>
+</html>

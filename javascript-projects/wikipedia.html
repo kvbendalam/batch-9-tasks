@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            text-align:center;
+        }
+
+        #searchValue{
+            width:80%;
+            height:40px;
+            border:1px solid black;
+            font-size: 24px;
+            padding:10px;
+        }
+
+        #searchBtn{
+            width:20%;
+            height:50px;
+            border:1px solid black;
+            font-size: 24px;
+            padding:10px;
+        }
+
+        #result{
+            width: 80%;
+            height:40px;
+            padding:10px;
+            font-size:24px;
+            margin: 0 auto;
+            text-align:center;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wikipedia Search</h1>
+        <input type="text" id="searchValue" value=""/>
+        <br/><br/>
+        <input type="button" value="Search" id="searchBtn" onclick="searchResults()"/>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function searchResults(){
+            var searchValue =  document.getElementById("searchValue");
+            var p = document.getElementById("result")
+            p.innerHTML = "User search results are : " + searchValue.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = [99,98,89,98,99,100];
+
+        console.log(marks[1])
+
+        marks.push(99);
+        console.log(marks);
+
+        marks.push(98);
+        console.log(marks);
+
+        marks.pop()
+        console.log(marks)
+
+        marks.unshift(1)
+        console.log(marks)
+
+        marks.shift()
+        console.log(marks)
+
+
+        var fruits = ["apple", "banana", "lemon", "orange", "papaya"]
+        console.log(fruits.slice(1,4))    
+        console.log(fruits)    
+
+
+
+        var cars = ["bmw", "benz", "vw", "audi"]
+        cars.splice(1,0,"Tata Harrier", "Mahindra xuv 700")
+        console.log(cars);
+
+        cars.splice(1,4)
+        console.log(cars)
+
+
+        var arr1 = [1,2,3,4];
+        var arr2 = [3,4,5,6];
+
+        var res = arr1.concat(arr2);
+        console.log(res);
+
+        var res1 = arr2.concat(arr1)
+        console.log(res1)
+
+
+
+        var companies = ["Capgemini", "TCS" , "Wipro", "Accenture"];
+
+        console.log(companies.indexOf("TCS"))
+    </script>
+</body>
+</html>
