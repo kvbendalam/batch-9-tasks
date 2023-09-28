@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 function Person() {
     return (
@@ -36,6 +36,13 @@ function Person() {
                     <td>Hyderabad</td>
                 </tr>
             </table>
+            <Link to="/login">Login</Link><br />
+            <Link to="/registration">Registration</Link>
+
+            <br />
+            <p>These are anchor tags</p>
+            <a href="/login">Login</a>
+            <a href="/registration">Registration</a>
         </div>
     )
 

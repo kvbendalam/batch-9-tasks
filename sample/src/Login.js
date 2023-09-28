@@ -11,6 +11,8 @@ export default class Login extends Component {
         this.handleUsername = this.handleUsername.bind(this)
         this.handlePassword = this.handlePassword.bind(this)
         this.submitHandler = this.submitHandler.bind(this)
+        this.register = this.register.bind(this)
+
     }
 
     handleUsername(event) {
@@ -25,6 +27,8 @@ export default class Login extends Component {
         event.preventDefault()
         console.log(this.state.username, this.state.password)
     }
+
+
 
     render() {
         return (

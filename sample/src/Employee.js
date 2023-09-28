@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
-export default class Employee extends Component {
-    render() {
-        return (
-            <>
-                <p>Employee 1</p>
-                <p>Employee 2</p>
-            </>
-        )
-    }
+function Employee() {
+
+    const { id } = useParams()
+
+    return (
+        <div>Employee {id}</div>
+    )
 }
+
+export default Employee
