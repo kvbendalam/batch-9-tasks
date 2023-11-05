@@ -19,6 +19,7 @@ import DataFetchinginFun from './DataFetchinginFun'
 import AxiosinClass from './AxiosinClass';
 import AxiosinFun from './AxiosinFun';
 import Dog from './Dog'
+import Todo from './Todo'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path='/' element={< Counterf />}></Route>
+          <Route exact path='/todo' element={<Todo />}></Route>
           <Route exact path='/dog' element={< Dog />}></Route>
           <Route exact path="/axiosinc" element={<AxiosinClass />}></Route>
           <Route exact path="/axiosinfun" element={<AxiosinFun />}></Route>
